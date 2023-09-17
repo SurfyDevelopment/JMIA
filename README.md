@@ -38,6 +38,13 @@ dependencies {
 
 ## Utilizzo
 
+Innanzitutto, bisogna registrare l'istanza di JMIA nel proprio metodo/classe.
+```java
+
+JMIA jmia = JMIA.getInstance();
+
+```
+
 Ecco alcuni esempi di come puoi utilizzare questa libreria:
 
 **Top 10 Servers (Per Voti)**
