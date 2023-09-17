@@ -87,13 +87,13 @@ public class JMIA {
     }
 
 
-    public List<Vote> getServerDailyVotes(Server server) throws IOException {
-        return Requests.getServerDailyVotes(proxy, server);
+    public Server getServerByPosition(int position) throws IOException {
+        return Requests.getServerList(proxy).get(position - 1);
     }
 
 
-    public URL getServerLogo(Server server) throws MalformedURLException {
-        return Requests.getServerLogoURL(server);
+    public List<Vote> getServerDailyVotes(Server server) throws IOException {
+        return Requests.getServerDailyVotes(proxy, server);
     }
 
 
@@ -105,6 +105,11 @@ public class JMIA {
      */
     public List<Vote> getServerVotes(String apiKey) throws IOException {
         return Requests.getServerVotes(proxy, apiKey);
+    }
+
+
+    public URL getServerLogo(Server server) throws MalformedURLException {
+        return Requests.getServerLogoURL(server);
     }
 
 
