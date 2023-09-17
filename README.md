@@ -1,4 +1,4 @@
-<img align="right" src="https://i.imgur.com/hRKebb4.png" height="200" width="200">
+<img align="right" src="https://i.imgur.com/hRKebb4.png" height="150" width="150">
 
 # JMIA (Java Minecraft-Italia API)
 JMIA è una libreria Java per semplificare l'integrazione con le [API](https://minecraft-italia.net/lista/docs/) di [Minecraft-Italia.net](https://minecraft-italia.net/).
