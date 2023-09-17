@@ -7,7 +7,7 @@ La libreria fornisce una serie di funzioni e classi per accedere alle funzionali
 
 ## Installazione
 
-Puoi aggiungere questa libreria al tuo progetto Java utilizzando Maven. Aggiungi la seguente dipendenza al tuo file `pom.xml`:
+Puoi aggiungere questa libreria al tuo progetto Java utilizzando **Gradle** o **Maven**. Aggiungi la seguente dipendenza al tuo file `pom.xml`/`build.gradle`:
 
 **Gradle**
 ```gradle
