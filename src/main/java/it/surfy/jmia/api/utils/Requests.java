@@ -1,10 +1,10 @@
 package it.surfy.jmia.api.utils;
 
-import com.sun.istack.internal.Nullable;
 import it.surfy.jmia.api.mcita.endpoints.Filters;
 import it.surfy.jmia.api.mcita.endpoints.Server;
 import it.surfy.jmia.api.mcita.endpoints.Vote;
 import it.surfy.jmia.api.mcita.proxy.Proxy;
+import org.jetbrains.annotations.Nullable;
 import retrofit2.Response;
 
 import java.io.IOException;

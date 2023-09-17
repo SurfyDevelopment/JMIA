@@ -1,6 +1,5 @@
 package it.surfy.jmia;
 
-import com.sun.istack.internal.Nullable;
 import it.surfy.jmia.api.mcita.endpoints.Filters;
 import it.surfy.jmia.api.mcita.endpoints.Server;
 import it.surfy.jmia.api.mcita.endpoints.Vote;
@@ -8,6 +7,7 @@ import it.surfy.jmia.api.mcita.proxy.Proxy;
 import it.surfy.jmia.api.utils.Requests;
 import it.surfy.jmia.api.utils.UncheckedOkHttpClient;
 import lombok.Getter;
+import org.jetbrains.annotations.Nullable;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
