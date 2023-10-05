@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = 'it.surfy'
@@ -18,4 +19,11 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
 
+}
+
+shadowJar {
+    relocate 'com.google', 'it.surfy.jmia.libs.com.google'
+    relocate 'okhttp3', 'it.surfy.jmia.libs.okhttp3'
+    relocate 'okio', 'it.surfy.jmia.libs.okio'
+    relocate 'retrofit2', 'it.surfy.jmia.libs.retrofit2'
 }
