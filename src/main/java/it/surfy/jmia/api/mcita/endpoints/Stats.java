@@ -27,7 +27,6 @@ package it.surfy.jmia.api.mcita.endpoints;
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -35,19 +34,19 @@ import java.util.List;
 public class Stats {
 
     @SerializedName("today_players")
-    private List<Entry> dailyPlayers = Collections.emptyList();
+    private List<Entry> dailyPlayers;
 
     @SerializedName("month_players")
-    private List<Entry> monthlyPlayers = Collections.emptyList();
+    private List<Entry> monthlyPlayers;
 
     @SerializedName("month_votes")
-    private List<Entry> monthlyVotes = Collections.emptyList();
+    private List<Entry> monthlyVotes;
 
     @SerializedName("year_players")
-    private List<Entry> yearlyPlayers = Collections.emptyList();
+    private List<Entry> yearlyPlayers;
 
     @SerializedName("year_votes")
-    private List<Entry> yearlyVotes = Collections.emptyList();
+    private List<Entry> yearlyVotes;
 
 
     @Getter

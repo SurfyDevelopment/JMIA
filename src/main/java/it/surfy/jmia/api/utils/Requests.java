@@ -26,6 +26,7 @@ package it.surfy.jmia.api.utils;
 
 import it.surfy.jmia.api.mcita.endpoints.Filters;
 import it.surfy.jmia.api.mcita.endpoints.Server;
+import it.surfy.jmia.api.mcita.endpoints.Stats;
 import it.surfy.jmia.api.mcita.endpoints.Vote;
 import it.surfy.jmia.api.mcita.proxy.Proxy;
 import org.jetbrains.annotations.Nullable;
@@ -151,6 +152,18 @@ public class Requests {
     public static List<Vote> getServerVotes(Proxy proxy, String apiKey) throws IOException {
 
         Response<List<Vote>> response = proxy.fetchServerVotes(apiKey).execute();
+
+        if (!response.isSuccessful()) {
+            throw new RuntimeException("JMIA returned an error: " + ErrorUtils.decodeError(response, gson));
+        }
+
+        return response.body();
+    }
+
+
+    public static Stats getServerStats(Proxy proxy, int serverId) throws IOException {
+
+        Response<Stats> response = proxy.fetchServerStats(serverId).execute();
 
         if (!response.isSuccessful()) {
             throw new RuntimeException("JMIA returned an error: " + ErrorUtils.decodeError(response, gson));

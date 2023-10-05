@@ -26,6 +26,7 @@ package it.surfy.jmia;
 
 import it.surfy.jmia.api.mcita.endpoints.Filters;
 import it.surfy.jmia.api.mcita.endpoints.Server;
+import it.surfy.jmia.api.mcita.endpoints.Stats;
 import it.surfy.jmia.api.mcita.endpoints.Vote;
 import it.surfy.jmia.api.mcita.proxy.Proxy;
 import it.surfy.jmia.api.utils.Requests;
@@ -105,6 +106,10 @@ public class JMIA {
      */
     public List<Vote> getServerVotes(String apiKey) throws IOException {
         return Requests.getServerVotes(proxy, apiKey);
+    }
+
+    public Stats getServerStats(int serverId) throws IOException {
+        return Requests.getServerStats(proxy, serverId);
     }
 
 
